@@ -32,7 +32,7 @@ def home():
 
 
 @app.endpoint('views.bin')
-def bin(name):
+def bin(name, filetype):
     try:
         bin = db.lookup_bin(name)
     except KeyError:
